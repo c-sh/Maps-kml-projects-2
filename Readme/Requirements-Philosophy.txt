@@ -1,0 +1,12 @@
+1. Scalability 
+	- I should be able to add more criteria/parameters to the map by generating more KML files, without disturbing the existing ones
+	- I should be able to filter one criterion based on another (??)
+	- All the constants should be read from a config file
+	- Try to make the code that creates KML files generic
+	
+2. Automation
+	- Automate updating the Google maps at regular intervals
+	- Leverage Google Drive to automatically execute script (py/js)
+3. Need to host
+	
+4. UI
