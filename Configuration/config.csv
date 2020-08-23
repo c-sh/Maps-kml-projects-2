@@ -1,4 +1,4 @@
-,Configuration,Value
+Classification,Configuration,Value
 ,,
 Real Estate,base website,
 Real Estate,property reject list,
@@ -8,4 +8,4 @@ Real Estate,property type (apt/house),
 ,,
 School,School list,
 School,School catchment Area files,
-School ,Type,
+School,Type,
