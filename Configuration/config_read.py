@@ -6,11 +6,11 @@ import os
 import csv
 
 class _def_config:
-	def __init__(self, config_csv = "./config.csv"):
+	def __init__(self, config_csv = 'C:\\Users\\kah\\GoogleDrive\\git-repo\\py2kml\\Maps-KML-Projects-2\\Configuration\\config.csv'):
 		#dictionary of all configurations
 		self.__top_level_config = {}
 		self.__top_level_config = self.__read_from_config_file( config_csv )
-		print self.__top_level_config
+		# print self.__top_level_config
 		
 		#school config
 		
@@ -38,8 +38,12 @@ class _def_config:
 	def getConfigList(self, classification):
 		return self.__top_level_config[classification].keys()
 
-O_def_config = _def_config()
-# print O_def_config.getClassificationList()
-
-# for key in O_def_config.getClassificationList():
-	# print O_def_config.getConfigList(key)
+	def getConfigDict(self, classification):
+		return self.__top_level_config[classification]
+		
+	def getConfig(self, Config):
+		for classif in self.__top_level_config.keys():
+			if Config in self.__top_level_config[classif].keys():
+				tmp_dict = self.__top_level_config[classif]
+				return tmp_dict[Config]
+		return -1

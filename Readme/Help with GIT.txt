@@ -1,3 +1,6 @@
 GIT / Git Hub help
 ---
 URL: https://www.javatpoint.com/git-add
+
+For packages
+1. set PythonPath=C:\Python27;C:\Users\kah\GoogleDrive\git-repo\py2kml\Maps-KML-Projects-2
